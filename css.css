@@ -1,0 +1,24 @@
+html{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 65%, rgba(237,171,100,1) 96%, rgba(231,167,47,1) 100%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.navigation{
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 1vw;
+}
+
+ul{
+    list-style-type: none;
+    float: right;
+    margin-top: 5vw;
+    margin-right: 5vw;
+}
+
+ul li{
+    display: inline-block;
+
+}
