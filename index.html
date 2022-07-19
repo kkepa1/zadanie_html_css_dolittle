@@ -6,20 +6,22 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Home</title>
         <link rel="stylesheet" type="text/css" href="css.css">
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <div class="main">
             <header>
                 <div class="navigation">
-                    <div class="logo">
-                        <img src="img/png/logo.png" alt="Logo" />
+                    <div class="image-div">
+                        <img class="logo" src="img/png/logo.png" alt="Logo" />
                     </div>
 
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#">Recipies</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
@@ -29,36 +31,56 @@
 
             <div class="subscribe">
                 <div class="e-mail">
-                    <h2>Master The <br>Culinary Arts Today</h2>
+                    <h1>Master The <br>Culinary Arts Today</h1>
                     <p>Explore 250+ recipes</p>
                     <!-- Enter your email and subscribe -->
+                    <div class="enter-mail">
+                        <input type="text" id="mail" placeholder="Enter your e-mail">
+                        <button type="button" id="subscribe-button">Subscribe</button>
+                    </div>
                 </div>
 
                 <div class="man-on-hat">
-                    <img src="img/png/cooking.png" alt="Man sitting on hat">
+                    <img class="man-on-hat-image" src="img/svg/cooking.svg" alt="Man sitting on hat">
                 </div>
             </div>
 
-            <div class="images">
+            <div class="grid-container">
                 <div>
-                    <img src="img/png/breakfast.png" alt="Breakfast" />
+                    <img class="image" src="img/svg/breakfast.svg" alt="Breakfast" />
                     <p>Breakfast ideas</p>
                 </div>
 
                 <div>
-                    <img src="img/png/snacks.png" alt="Snacks">
+                    <img class="image" src="img/svg/snacks.svg" alt="Snacks">
                     <p>Snacks</p>
                 </div>
-                <img src="img/png/barbecue.png" alt="Barbecue">
-                <p>Barbecue</p>
+
                 <div>
-                    <img src="img/png/cookies.png" alt="Cookies">
+                    <img class="image" src="img/svg/barbecue.svg" alt="Barbecue">
+                    <p>Barbecue</p>
+                </div>
+
+                <div>
+                    <img class="image" src="img/svg/cookies.svg" alt="Cookies">
                     <p>Cookies</p>
+                </div>
+            </div>
+
+            <div class="trending-recepies">
+                <i class="fa-thin fa-arrow-trend-up"></i>
+                <p>Trending Reciepies</p>
+                <div class="recepies-container">
+                    <img class="recepy" src="img/photo/pancakes.jpg" alt="Cookies">
+                    <img class="recepy" src="img/photo/musli.jpg" alt="Cookies">
+                    <img class="recepy" src="img/photo/pumpkin_pie.jpg" alt="Cookies">
                 </div>
             </div>
         </div>
 
-
+        <footer>
+            <p>2022 EasyMeals. All rights reserved.</p>
+        </footer>
     </body>
 
 </html>

@@ -1,24 +1,134 @@
-html{
+body{
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 65%, rgba(237,171,100,1) 96%, rgba(231,167,47,1) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 65%, rgba(237,171,100,1) 95%, rgba(231,167,47,1) 100%);
     font-family: 'Open Sans', sans-serif;
 }
 
+.logo{
+    width: 110px;
+    height: 60px;
+}
+
+.image-div{
+    margin: 1vw 0 0 0.5vw;
+}
 
 .navigation{
     margin: auto;
     overflow: hidden;
-    padding-bottom: 1vw;
 }
 
 ul{
     list-style-type: none;
     float: right;
-    margin-top: 5vw;
     margin-right: 5vw;
+    margin-top: -4vh;
 }
 
 ul li{
     display: inline-block;
+    padding-left: 4vw;
+}
 
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover{
+    border-bottom: 2px solid white;
+}
+
+.e-mail{
+    margin: 10vh 0 0 15vw;
+}
+
+#mail{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 12vw;
+    height: 4vh;
+    text-align: center;
+    outline: none;;
+    text-decoration: none;
+    box-shadow: -0.3px 1.7px rgb(162, 162, 162);
+}
+
+#mail:hover{
+    transform: scale(1.1) perspective(1px);
+}
+
+#subscribe-button{
+    margin-left: 1vw;
+    width: 6vw;
+    height: 5vh;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -0.5px 1.7px rgb(162, 162, 162);
+    outline: none;
+    background: rgba(231,167,47,1);
+    color: white;
+
+}
+
+#subscribe-button:hover{
+    cursor: pointer;
+    transform: scale(1.1) perspective(1px);
+}
+
+.man-on-hat{
+    display: flex;
+    justify-content: flex-end;
+    margin: -33vh 14vw;
+    background: transparent;
+}
+
+.man-on-hat-image{
+    width: 20vw;
+    height: 40vh;
+    background: transparent;
+}
+
+.grid-container{
+    display: grid;
+    margin: 40vh 3vw 8vh 3vw ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 60px;
+}
+
+.grid-container div{
+    padding: 7vh 3vw 0 3vw;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 10px;
+    box-shadow: -0.3px 1.7px rgb(162, 162, 162);
+}
+
+.image{
+    width: 15vw;
+    height: 20vh;
+}
+
+.grid-container p{
+    text-align: center;
+    margin-top: -0.5vh;
+}
+
+.trending-recepies{
+    margin-top: ;
+    background: rgba(231,167,47,1);
+}
+
+.recepies-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.recepies-container img{
+    width: 15vw;
+    height: 40vh;
+    border: none;
+    border-radius: 10px;
 }
