@@ -97,7 +97,13 @@ ul li a:hover{
     gap: 60px;
 }
 
+.grid-container div:hover{
+    opacity: 0.9;
+    transform: rotate(360deg);
+}
+
 .grid-container div{
+    transition: transform .6s ease-in-out;
     padding: 7vh 3vw 0 3vw;
     align-self: center;
     justify-self: center;
@@ -117,8 +123,15 @@ ul li a:hover{
 }
 
 .trending-recepies{
-    margin-top: ;
+    padding: 2vh 0 10vh 0;
+    margin-bottom: 2vh;
     background: rgba(231,167,47,1);
+}
+
+.trending-recepies p{
+    margin-left: 10vw;
+    color: white;
+    font-size: x-large;
 }
 
 .recepies-container{
@@ -131,4 +144,30 @@ ul li a:hover{
     height: 40vh;
     border: none;
     border-radius: 10px;
+    box-shadow: -0.3px 2px black;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+
+.recepies-container img:hover{
+   opacity: 0.7;
+   transform: scale(1.1);
+   box-shadow: none;
+   border: 0.5px solid black;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2vw 0 7vw;
+}
+
+
+.media-icons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.media-icons i{
+    margin-right: 2vw;
 }
